@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Habit Tracker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="app">
+    <h1>🌱 Daily Habit Tracker</h1>
+
+    <div class="form-container">
+      <input type="text" id="habit-input" placeholder="Enter a new habit...">
+      <button onclick="addHabit()">+ Add Habit</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Habit</th>
+          <th>Done Today</th>
+          <th>Streak 🔥</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody id="habit-list"></tbody>
+    </table>
+
+    <footer>
+      <p>Stay consistent. Small steps create big change ✨</p>
+    </footer>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
